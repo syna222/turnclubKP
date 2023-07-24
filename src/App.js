@@ -15,6 +15,7 @@ function App() {
 
   const { getAngebote } = useContentfulAngebote();
   const [ angebote, setAngebote ] = useState([]);
+  const [filter, setFilter ] = useState([]);
 
   //comparator-func for sorting angebote alphabetically:
   function compareT (a, b){
@@ -28,12 +29,12 @@ function App() {
   }
 
   useEffect(() => {
-    getAngebote().then((response) => {
+    getAngebote(filter).then((response) => {
         console.log(response.items);        //items = Array of Sportangebote-objects
         let sorted_items = response.items;
         sorted_items.sort( compareT )
         setAngebote(sorted_items)});
-  }, []);
+  }, [filter]);
 
 
   return (
@@ -43,7 +44,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Startseite />} />
         <Route path="/news" element={<News />} />
-        <Route path="/sportangebote" element={<Sportangebote angebote={angebote}/>} />
+        <Route path="/sportangebote" element={<Sportangebote angebote={angebote} setFilter={setFilter}/>} />
         <Route path="/ueberuns" element={<ÜberUns />} />
         <Route path="/sonstiges" element={<Sonstiges />} />
         <Route path="/kontakt" element={<Kontakt />} />

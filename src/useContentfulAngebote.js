@@ -8,10 +8,16 @@ export default function useContentfulAngebote(){
         host: "cdn.contentful.com"
         });
 
-    async function getAngebote(){
+    async function getAngebote(filter){
         try {
-            const angebot_entries = await client.getEntries({content_type: "sportangebot"});
-            return angebot_entries;
+            if(filter){
+                const angebot_entries = await client.getEntries({content_type: "sportangebot", [`fields.${filter[0]}`]: filter[1]});
+                return angebot_entries;
+            }
+            else{
+                const angebot_entries = await client.getEntries({content_type: "sportangebot"});
+                return angebot_entries;
+            }
         } catch (error){
             console.log("Error fetching Sportangebote: ", error);
         }

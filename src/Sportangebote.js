@@ -1,6 +1,22 @@
+import { useState } from 'react';
 
+export default function Sportangebote({angebote, setFilter}){
 
-export default function Sportangebote({angebote}){
+    const [selectedOption, setSelectedOption ] = useState("");
+
+    function handleSelectChange(e){
+        setSelectedOption(e.target.value);
+        //filterabfrage:
+        let localFilter;
+        if(e.target.value === "freie Plätze"){
+            localFilter = ["freieplaetze", true];
+        }
+        else{
+            localFilter = [];
+        }
+
+        setFilter(localFilter);
+    }
 
     return(
     <div className="sportangebote">
@@ -10,7 +26,7 @@ export default function Sportangebote({angebote}){
             Unsere Kinder-Sportangebote richten sich an  Kinder aus Köln-Poll!
         </div>
         <hr/>
-        <select>
+        <select value={selectedOption} onChange={handleSelectChange}>
             <option value="ALLE">ALLE</option>
             <option value="freie Plätze">freie Plätze</option>
         </select>
