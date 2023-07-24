@@ -11,8 +11,14 @@ export default function useContentfulAngebote(){
     async function getAngebote(filter){
         try {
             if(filter){
-                const angebot_entries = await client.getEntries({content_type: "sportangebot", [`fields.${filter[0]}`]: filter[1]});
-                return angebot_entries;
+                if(filter[0] === "alter"){
+                    const angebot_entries = await client.getEntries({content_type: "sportangebot", [`fields.${filter[0]}[match]`]: filter[1]});
+                    return angebot_entries;
+                }
+                else{
+                    const angebot_entries = await client.getEntries({content_type: "sportangebot", [`fields.${filter[0]}`]: filter[1]});
+                    return angebot_entries;
+                }
             }
             else{
                 const angebot_entries = await client.getEntries({content_type: "sportangebot"});
