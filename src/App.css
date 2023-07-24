@@ -1,38 +1,125 @@
 .App {
-  text-align: center;
+    text-align: center;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*NavHeader */
+.header {
+    background-image: linear-gradient(to bottom, red, white);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head-wrapper {
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.outer-div {
+    flex: 1;
+    display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.outer-div > .logo {
+    object-fit: contain;
+    width: 10vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inner-div {
+    flex: 2;
 }
+
+h1 {
+    display: inline-block;
+    margin-top: 0;
+    padding: 0.5%;
+    padding-top: 1.5%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 1.5%;
+}
+
+.nav-elem {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-elem:hover,
+.nav-elem:active,
+.nav-elem:focus {
+    text-decoration: underline;
+}
+
+/*Startseite*/
+.vereins-banner {
+    width: 50vw;
+}
+
+/*Sportangebote*/
+.angebot-titel {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+li {
+    margin: 15px;
+}
+
+.green {
+    color: rgb(25, 167, 25);
+    font-weight: bolder;
+}
+
+.red {
+    color: red;
+}
+
+/*Kontakt*/
+.kontakt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 40%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+label {
+    flex: 1;
+}
+
+input,
+textarea,
+button {
+    padding: 1%;
+}
+
+input {
+    flex: 2;
+}
+
+textarea {
+    flex: 2;
+    height: 20vh;
+}
+
+.button-container {
+    flex: 2;
+}
+
