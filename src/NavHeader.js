@@ -1,4 +1,4 @@
-import { NavLink, Routes, Route, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "./images/Logo.png";
 
 export default function NavHeader(){

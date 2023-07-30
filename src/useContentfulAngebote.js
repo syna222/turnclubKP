@@ -8,26 +8,22 @@ export default function useContentfulAngebote(){
         host: "cdn.contentful.com"
         });
 
-    async function getAngebote(filter){
+    async function getAngebote(filter) {
         try {
-            if(filter){
-                if(filter[0] === "alter"){
-                    const angebot_entries = await client.getEntries({content_type: "sportangebot", [`fields.${filter[0]}[match]`]: filter[1]});
-                    return angebot_entries;
-                }
-                else{
-                    const angebot_entries = await client.getEntries({content_type: "sportangebot", [`fields.${filter[0]}`]: filter[1]});
-                    return angebot_entries;
-                }
+          const query = {content_type: 'sportangebot',};
+          if(filter){
+            if(filter[0] === 'alter'){
+              query[`fields.${filter[0]}[match]`] = filter[1];
+            }else{
+              query[`fields.${filter[0]}`] = filter[1];
             }
-            else{
-                const angebot_entries = await client.getEntries({content_type: "sportangebot"});
-                return angebot_entries;
-            }
-        } catch (error){
-            console.log("Error fetching Sportangebote: ", error);
+          }
+          const angebot_entries = await client.getEntries(query);
+          return angebot_entries;
+        }catch(error){
+          console.log('Error fetching Sportangebote: ', error);
         }
-    }
+      }
 
         return { getAngebote };
 }

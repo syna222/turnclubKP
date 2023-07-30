@@ -3,9 +3,14 @@
     margin: 0;
 }
 
+.container {
+    min-height: 73vh;
+
+}
+
 /*NavHeader */
 .header {
-    background-image: linear-gradient(to bottom, red, white);
+    background-image: linear-gradient(to bottom, orange, white);
 }
 
 .head-wrapper {
@@ -53,9 +58,17 @@ nav {
     text-decoration: underline;
 }
 
+/*Footer*/
+.footer {
+    min-height: 5vh;
+    background-image: linear-gradient(to bottom, white, orange);
+    padding-top: 1.5%;
+}
+
 /*Startseite*/
 .vereins-banner {
-    width: 50vw;
+    width: 45vw;
+    
 }
 
 /*Sportangebote*/
@@ -121,5 +134,31 @@ textarea {
 
 .button-container {
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
+.absenden-btn {
+    
+}
+
+/*Ueber Uns : Historisches*/
+.historisches {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.historien-artikel {
+    max-width: 80vw;
+}
+
+.artikel-text img {
+    max-width: 450px;
+    max-height: 600px;
+    margin: 5px;
+}

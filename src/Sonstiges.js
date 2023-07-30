@@ -5,7 +5,7 @@ export default function Sonstiges(){
 
 
     return(
-    <div>
+    <div className="sonstiges container">
 
     </div>
     );

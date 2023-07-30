@@ -27,7 +27,7 @@ export default function Sportangebote({angebote, setFilter}){
     }
 
     return(
-    <div className="sportangebote">
+    <div className="sportangebote container">
         <h2>Sportangebote</h2>
         <div className="präambel">
             Bei Interesse an einer beitragsfreien "Probestunde" bitte das Kontaktformular nutzen!

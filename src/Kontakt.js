@@ -5,7 +5,7 @@ export default function Kontakt(){
 
 
     return(
-    <div className="kontakt">
+    <div className="kontakt container">
         <h2>Kontaktiere uns!</h2>
         <div className="präambel">
             Dies ist der einfachste Weg um mit dem TurnClub Köln-Poll 1904 e.V. in Kontakt zu treten. Wir bemühen uns so schnell wie möglich zu antworten.
@@ -31,11 +31,11 @@ export default function Kontakt(){
             </section>
             <section>
                 <label htmlFor="nachricht">Nachricht</label>
-                <textarea id="nachricht" name="nachricht">Meine Nachricht...</textarea>
+                <textarea id="nachricht" name="nachricht"></textarea>
             </section>
             <section>
                 <label>* Pflichtfelder</label>
-                <div className="button-container"><button>Absenden</button></div>
+                <div className="button-container"><button className="absenden-btn">Absenden</button></div>
             </section>
         </form>
     </div>
