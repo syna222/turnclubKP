@@ -3,9 +3,12 @@
     margin: 0;
 }
 
-.container {
+/* .container {
     min-height: 73vh;
+} */
 
+#pink {
+    color: pink;
 }
 
 /*NavHeader */
@@ -42,7 +45,7 @@ nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     padding-bottom: 1.5%;
 }
 
@@ -56,6 +59,30 @@ nav {
 .nav-elem:active,
 .nav-elem:focus {
     text-decoration: underline;
+}
+
+.nav-elem.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0; /* Reset margin to prevent spacing issues */
+    padding: 0;
+    display: none;
+    list-style: none;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.nav-elem.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+.subnav-elem{
+    color: black;
 }
 
 /*Footer*/
@@ -145,16 +172,26 @@ textarea {
 }
 
 /*Ueber Uns : Historisches*/
-.historisches {
+.container {
+    min-height: 73vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap: 10px;
 }
 
-.historien-artikel {
+.historien-artikel,
+.news-artikel,
+.ehrungen-artikel,
+.rueckschau-artikel,
+.allianz-artikel
+ {
     max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .artikel-text img {

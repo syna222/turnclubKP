@@ -1,7 +1,7 @@
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS } from '@contentful/rich-text-types';
 
-export default function News({ news }){
+export default function RolleRueckwaerts({ rueckschau }){
     const options = {
         renderNode: {
           [BLOCKS.EMBEDDED_ASSET]: node => {
@@ -14,17 +14,13 @@ export default function News({ news }){
     };
 
     return(
-    <div className="news container">
-        <h2>News</h2>
+    <div className="rueckschau container">
+        <h2>Rolle Rückwärts - Rückschau</h2>
         <hr />
-        {news.map((item, i) => 
-        <div key={i} className="news-artikel">
-            <br />
-            <h3>{item.fields.stand.split('-')[2].substring(0, 2) + "." + item.fields.stand.split('-')[1] + "." + item.fields.stand.split('-')[0]}</h3>
+        {rueckschau.map((item, i) => 
+        <div key={i} className="rueckschau-artikel">
             <div className="artikel-text">{documentToReactComponents(item.fields.text, options)}</div>
         </div>)}
     </div>
     );
-
-
 }

@@ -1,6 +1,6 @@
 import { createClient } from 'contentful';
 
-export default function useContentfulAngebote(){
+export default function useCFAngebote(){
 
     const client = createClient({
         space: process.env.REACT_APP_SPACE_ID,

@@ -1,6 +1,6 @@
 import { createClient } from 'contentful';
 
-export default function useContentfulHistorisches(){
+export default function useCFHistorisches(){
 
     const client = createClient({
         space: process.env.REACT_APP_SPACE_ID,

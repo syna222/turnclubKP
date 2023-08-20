@@ -47,8 +47,8 @@ export default function Sportangebote({angebote, setFilter}){
             <option value="samstags">samstags</option>
         </select>
         <ul>
-            {angebote.map(item => 
-            <li>
+            {angebote.map((item, i)=> 
+            <li key={i}>
                 <div className="angebot-titel">{item.fields.titel}</div>
                 <div>{item.fields.wochentag + ", " + item.fields.uhrzeit + " Uhr"}</div>
                 <div>{"Alter: " + item.fields.alter}</div>

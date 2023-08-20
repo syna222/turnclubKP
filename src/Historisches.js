@@ -16,8 +16,9 @@ export default function Historisches({historien}){
     return(
     <div className="historisches container">
         <h2>Historisches vom Turn-Club Köln-Poll 1904 e.V.</h2>
-        {historien.map(item => 
-        <div className="historien-artikel">
+        <hr />
+        {historien.map((item, i) => 
+        <div key={i} className="historien-artikel">
             <h3>{item.fields.titel}</h3>
             <div className="artikel-text">{documentToReactComponents(item.fields.text, options)}</div>
         </div>)}
