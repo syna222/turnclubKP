@@ -176,7 +176,6 @@ textarea {
     min-height: 73vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     gap: 10px;
 }
@@ -185,17 +184,30 @@ textarea {
 .news-artikel,
 .ehrungen-artikel,
 .rueckschau-artikel,
-.allianz-artikel
+.allianz-artikel,
+.info
  {
-    max-width: 80vw;
+    max-width: 75vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.artikel-text img {
-    max-width: 450px;
-    max-height: 600px;
-    margin: 5px;
+.artikel-text{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    min-width: 0;
+}
+
+.img-container img {
+    width: 50%; 
+    height: auto;
+    /* margin: 5px; */
 }

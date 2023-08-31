@@ -9,7 +9,7 @@ export default function UeberUns(){
         <h2>Über uns</h2>
         <hr />
         <h3>Allgemeines</h3>
-        <div className="allgemeine-info">
+        <div className="allgemein info">
             <p>Der Turn-Club Köln-Poll 1904 e. V. hat sich seit seiner Gründung vor mehr als 100 Jahren zu einer festen Institution im Köln-Poller Leben entwickelt. Belegt wird dies nicht zuletzt durch rund 950 Mitglieder.</p>
             <p>Allein ca. 400 Kinder und Jugendliche bis 18 Jahre gehören zum Stamm des Turnvereins. Vor allem die Abteilungen Eltern-Kind-Turnen, Kinderturnen, Geräteturnen, Le Parcours, Trampolinturnen, Rhönradturnen und das Speedskaten (Inlinertraining) sind bei den Kindern sehr beliebt.</p>
             <p>Im Erwachsenenbereich werden die Gruppen in den Bereichen Fitness, Frauengymnastik, Pilates, Rückenfit (Männer, Frauen, gemischt), Senioren 65+, Fit für 101, Mixed-Volleyball als auch das Speedskating gut angenommen.</p>
@@ -18,7 +18,7 @@ export default function UeberUns(){
         </div>
         <hr />
         <h3>Beiträge</h3>
-        <div className="beitrag-info">
+        <div className="beitrag info">
             <p>Beitrag Wassergymnastik: 20,- € mtl.</p>
             <p>Beitrag Erwachsene: 10,- € mtl.</p>
             <p>Beitrag Kinder: 5,- € mtl.</p>
@@ -28,13 +28,13 @@ export default function UeberUns(){
         </div>
         <hr />
         <h3>Bankverbindung</h3>
-        <div className="bankverbindung-info">
+        <div className="bankverbindung info">
             <p>Sparkasse Köln Bonn</p>
             <p>DE47 3705 0198 0001 5222 75</p>
         </div>
         <hr />
         <h3>Mitarbeitende & Vorstand</h3>
-        <div className="mitarbeiterinnen-infos">
+        <div className="mitarbeiterinnen info">
             <h4>Qualifikationen:</h4>
             <p>Diplom-SportlehrerIn: 5</p>
             <p>ÜbungsleiterIn 2. Lizenzstufe Gesundheit: 9</p>
@@ -42,10 +42,10 @@ export default function UeberUns(){
             <p>FachübungsleiterIn: 2</p>
             <p>ÜbungsleiterInnen HelferInnen: 12</p>
             <h4>Vorstand:</h4>
-            <p>1.Vorsitzende: Ute Ahn</p>
-            <p>2.Vorsitzende: Angelika Habeth</p>
-            <p>1.Kassierer: Joachim Weber</p>
-            <p>2.Kassiererin: Franziska Merle</p>
+            <p>1. Vorsitzende: Ute Ahn</p>
+            <p>2. Vorsitzende: Angelika Habeth</p>
+            <p>1. Kassierer: Joachim Weber</p>
+            <p>2. Kassiererin: Franziska Merle</p>
             <h4>Erweiterter Vorstand:</h4>
             <p>Sarah Busbach, Ricarda Gottschlich</p>
             <h4>DSGVO Beauftragter:</h4>
@@ -53,7 +53,7 @@ export default function UeberUns(){
         </div>
         <hr />
         <h3>Kündigung</h3>
-        <div className="kuendigung-info">
+        <div className="kuendigung info">
             <p>Eine Kündigung zwecks Austritt aus dem Turn-Club muss schriftlich mit Unterschrift bei einem Vorstandsmitglied eingereicht werden und ist nur mindestens 6 Wochen vor Ende des laufenden Halbjahres möglich. Dieses unterschriebene Kündigungsschreiben kann auch gescannt per E Mail gesendet werden:   info@turnclub-poll1904.koeln</p>
             <p>Eine Bestätigung der Kündigung per E Mail kann nur erfolgen, wenn auf dem Kündigungsschreiben die aktuelle E-Mail-Adresse steht, eine postalische Bestätigung kann nur erfolgen, wenn die Portokosten usw. vom kündigenden Mitglied bzw. dessen gesetzlichem/r Vertreter/in getragen werden.</p>
             <p>Eine nicht fristgerecht eingereichte Kündigung kann erst im folgenden Halbjahr berücksichtigt werden, so dass der Mitgliedsbeitrag automatisch eingezogen wird und nicht zurückerstattet werden kann.</p>

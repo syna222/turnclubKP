@@ -8,7 +8,7 @@ export default function EhrungenJubilaeen({ ehrungen }){
             const { title, description, file } = node.data.target.fields;
             const imageUrl = file.url;
             const imageAlt = title || description || 'Image';
-            return <img src={imageUrl} alt={imageAlt} />;
+            return <div className="img-container"><img src={imageUrl} alt={imageAlt} /></div>;
           },
         },
     };
