@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-/* .container {
-    min-height: 73vh;
-} */
-
 #pink {
     color: pink;
 }
@@ -16,11 +12,11 @@
     background-image: linear-gradient(to bottom, orange, white);
     padding-top: 1.5%;
     padding-bottom: 1%;
-    /* position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; */
+    z-index: 1000;
 }
 
 .head-wrapper {
@@ -60,7 +56,6 @@ nav {
     color: black;
     text-decoration: none;
     font-weight: bold;
-    /* margin: 1vh 2vw; */
     margin: 1vh 3vh;
 }
 
