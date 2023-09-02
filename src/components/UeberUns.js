@@ -1,13 +1,9 @@
 
-
 export default function UeberUns(){
-
-
 
     return(
     <div className="ueber-uns container">
         <h2>Über uns</h2>
-        <hr />
         <h3>Allgemeines</h3>
         <div className="allgemein info">
             <p>Der Turn-Club Köln-Poll 1904 e. V. hat sich seit seiner Gründung vor mehr als 100 Jahren zu einer festen Institution im Köln-Poller Leben entwickelt. Belegt wird dies nicht zuletzt durch rund 950 Mitglieder.</p>

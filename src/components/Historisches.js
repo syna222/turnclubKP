@@ -1,7 +1,7 @@
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS } from '@contentful/rich-text-types';
 
-export default function EhrungenJubilaeen({ ehrungen }){
+export default function Historisches({historien}){
     const options = {
         renderNode: {
           [BLOCKS.EMBEDDED_ASSET]: node => {
@@ -14,14 +14,14 @@ export default function EhrungenJubilaeen({ ehrungen }){
     };
 
     return(
-    <div className="ehrungen container">
-        <h2>Ehrungen und Jubiläen</h2>
-        <hr />
-        {ehrungen.map((item, i) => 
-        <div key={i} className="ehrungen-artikel">
+    <div className="historisches container">
+        <h2>Historisches vom Turn-Club Köln-Poll 1904 e.V.</h2>
+        {historien.map((item, i) => 
+        <div key={i} className="historien-artikel">
             <h3>{item.fields.titel}</h3>
             <div className="artikel-text">{documentToReactComponents(item.fields.text, options)}</div>
         </div>)}
+        <h3>... wir arbeiten an der Fortsetzung der Geschichte!</h3>
     </div>
     );
 }

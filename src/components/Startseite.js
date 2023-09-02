@@ -1,4 +1,4 @@
-import banner from "./images/banner.jpg";
+import banner from "../images/banner.jpg";
 
 export default function Startseite(){
 

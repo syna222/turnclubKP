@@ -11,7 +11,6 @@ export default function Kontakt(){
             Dies ist der einfachste Weg um mit dem TurnClub Köln-Poll 1904 e.V. in Kontakt zu treten. Wir bemühen uns so schnell wie möglich zu antworten.
             Wir freuen uns über Ihre Nachricht.
         </div>
-        <hr/>
         <form>
             <section>
                 <label htmlFor="vorname">Vorname *</label>

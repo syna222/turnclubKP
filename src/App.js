@@ -1,25 +1,24 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import { useEffect, useState } from 'react';
-import NavHeader from './NavHeader';
-import Footer from "./Footer";
-import Startseite from "./Startseite";
-import News from "./News"
-import Sportangebote from "./Sportangebote";
-import UeberUns from "./UeberUns";
-import Historisches from './Historisches';
-import EhrungenJubilaeen from './EhrungenJubilaeen';
-import Allianz from './Allianz';
-import RolleRueckwaerts from './RolleRueckwaerts';
-import Sonstiges from "./Sonstiges";
-import Kontakt from "./Kontakt";
-import useCFAngebote from './useCFAngebote';
-import useCFHistorisches from './useCFHistorisches';
-import useCFEhrungen from './useCFEhrungen';
-import useCFNews from "./useCFNews";
-import useCFRueckschau from './useCFRueckschau';
-import useCFAllianz from './useCFAllianz';
-import Impressum from './Impressum';
+import NavHeader from './components/NavHeader';
+import Footer from "./components/Footer";
+import Impressum from './components/Impressum';
+import Startseite from "./components/Startseite";
+import News from "./components/News"
+import Sportangebote from "./components/Sportangebote";
+import UeberUns from "./components/UeberUns";
+import Historisches from './components/Historisches';
+import EhrungenJubilaeen from './components/EhrungenJubilaeen';
+import Allianz from './components/Allianz';
+import RolleRueckwaerts from './components/RolleRueckwaerts';
+import Kontakt from "./components/Kontakt";
+import useCFAngebote from './gettersContentful/useCFAngebote';
+import useCFHistorisches from './gettersContentful/useCFHistorisches';
+import useCFEhrungen from './gettersContentful/useCFEhrungen';
+import useCFNews from "./gettersContentful/useCFNews";
+import useCFRueckschau from './gettersContentful/useCFRueckschau';
+import useCFAllianz from './gettersContentful/useCFAllianz';
 
 
 function App() {
@@ -133,13 +132,11 @@ function App() {
   return (
     <div className="App">
       <NavHeader/>
-
       <Routes>
         <Route path="/" element={<Startseite />} />
         <Route path="/news" element={<News news={news}/>} />
         <Route path="/sportangebote" element={<Sportangebote angebote={angebote} setFilter={setFilter}/>} />
         <Route path="/ueberuns" element={<UeberUns />} />
-        <Route path="/sonstiges" element={<Sonstiges />} />
         <Route path="/sonstiges/historisches" element={<Historisches historien={historien}/>} />
         <Route path="/sonstiges/ehrungen" element={<EhrungenJubilaeen ehrungen={ehrungen}/>} />
         <Route path="/sonstiges/allianz" element={<Allianz allianzposts={allianzposts}/>} />
@@ -147,7 +144,6 @@ function App() {
         <Route path="/kontakt" element={<Kontakt />} />
         <Route path="/impressum" element={<Impressum />} />
       </Routes>
-
       <Footer/>
     </div>
   );
